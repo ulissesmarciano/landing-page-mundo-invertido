@@ -10,11 +10,11 @@
   </head>
   <body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
     <header aria-label="Cabeçalho da página.">
-      <audio id="music" autoplay>
-        <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
+      <audio id="music" autoplay muted>
+        <source src="/assets/musics/normal-world.mpeg" aria-details="Audio do site" />
       </audio>
       <div class="header-content">
-        <img class="invert-element" src="assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
+        <img class="invert-element" src="/assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
         <p class="invert-element" role="text">
           Uma jornada para quem não tem medo do desconhecido. O caminho para o
           Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a
@@ -134,7 +134,9 @@
     
     <script type="module" src="assets/js/main.js"></script>
     <script>
-      
+      function switchTheme() {
+        document.body.classList.toggle('dark-theme')
+      }
     </script>
   </body>
 </html>
